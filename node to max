@@ -1,0 +1,7 @@
+const maxApi = require("max-api");
+
+maxApi.post('Hello from node!');
+
+maxApi.addHandler('greeting', () => {
+       maxApi.post('Got greeting!');
+});
